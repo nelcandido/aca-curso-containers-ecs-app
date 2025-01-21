@@ -28,6 +28,52 @@ variable "ssm_private_subnet_2" {}
 
 variable "ssm_private_subnet_3" {}
 
+variable "ssm_alb" {}
+
 variable "environment_variables" {}
 
 variable "capabilities" {}
+
+variable "scale_type" {}
+
+variable "task_minimum" {}
+
+variable "task_maximum" {}
+
+#### Autoscaling de CPU ####
+
+variable "scale_out_cpu_threshold" {}
+
+variable "scale_out_adjustment" {}
+
+variable "scale_out_comparison_operator" {}
+
+variable "scale_out_statistic" {}
+
+variable "scale_out_period" {}
+
+variable "scale_out_evaluation_periods" {}
+
+variable "scale_out_cooldown" {}
+
+variable "scale_in_cpu_threshold" {}
+
+variable "scale_in_adjustment" {}
+
+variable "scale_in_comparison_operator" {}
+
+variable "scale_in_statistic" {}
+
+variable "scale_in_period" {}
+
+variable "scale_in_evaluation_periods" {}
+
+variable "scale_in_cooldown" {}
+
+#### Tracking CPU ####
+
+variable "scale_tracking_cpu" {}
+
+#### Tracking Requests ####
+
+variable "scale_tracking_requests" {}
